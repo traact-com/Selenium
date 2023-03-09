@@ -35,13 +35,8 @@ public class Login {
                Assert.assertTrue(passwordtxt.isDisplayed());
                passwordtxt.sendKeys("Priyayoki02&");
               
-		        /* without assertion
-		        driver.findElement(By.cssSelector("#email")).sendKeys("priyanka@traact.com");
-		        driver.findElement(By.cssSelector("#password")).sendKeys("Priyayoki02&");
-		        driver.findElement(By.cssSelector("#sign-in-button")).click();
+		        
 		       
-		        */
-		        //validation
 		       // String Actualtext = driver.findElement(By.linkText("https://traact-staging.vercel.app/")).getText();
 
 		       // Assert.assertEquals(Actualtext, "https://traact-staging.vercel.app/" );
