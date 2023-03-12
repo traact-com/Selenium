@@ -19,7 +19,9 @@ public class Login {
 		
 		        WebDriver driver = new ChromeDriver();
 		  
+		        
 		        // Maximize the browser
+		        
 		        driver.manage().window().maximize();
 		  
 		        driver.get("https://traact-staging.vercel.app/signin");
