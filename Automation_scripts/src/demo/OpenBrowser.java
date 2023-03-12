@@ -14,9 +14,7 @@ import org.testng.annotations.Test;
 public class OpenBrowser {
 	public static String baseUrl = "https://traact-staging.vercel.app/";
 	ChromeDriver driver = new ChromeDriver();
-	  //WebDriver driver; 
-	 //driver = new ChromeDriver();
-	/* Methods in chronological order */
+	  
 	@BeforeTest (alwaysRun= true)
 	public void beforeTest() throws InterruptedException
 	{
