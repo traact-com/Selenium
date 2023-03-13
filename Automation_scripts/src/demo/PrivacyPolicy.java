@@ -26,7 +26,7 @@ public static void main(String[] args) {
 			String expected_url = "https://www.traact.com/privacy";
 			Assert.assertEquals(actual_url, expected_url,"_Error Message_");            
 	
-         driver.quit();
+         //driver.quit();
          
        
        
