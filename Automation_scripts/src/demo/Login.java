@@ -26,7 +26,8 @@ public class Login {
 		  
 		        driver.get("https://traact-staging.vercel.app/signin");
 		        
-		        
+
+	
 		        //assertion check for each fields
 		        WebElement usernametxt = driver.findElement(By.cssSelector("#email"));
 		        WebElement passwordtxt = driver.findElement(By.cssSelector("#password"));
