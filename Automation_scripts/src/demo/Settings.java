@@ -52,6 +52,7 @@ public static void main(String[] args) {
        String actual_url = driver.getCurrentUrl();
 		String expected_url = "https://traact-staging.vercel.app/settings";
 		Assert.assertEquals(actual_url, expected_url,"_Error Message_");  
+		// Error Message
        
 	
        

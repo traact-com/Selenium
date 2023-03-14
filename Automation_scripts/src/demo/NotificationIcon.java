@@ -57,6 +57,7 @@ public class NotificationIcon {
     				        Assert.assertEquals(actualTitle,title,"Page title doesnt match");
     				 
     				        System.out.println("The page title has been successfully verified");
+    				        // Test Commit
     				 
        
 	}
