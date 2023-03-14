@@ -50,7 +50,7 @@ public class Login {
 		        //wait-time 
 		        //comment addee
 		        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
+		        
 
 	}
 
