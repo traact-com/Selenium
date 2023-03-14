@@ -28,7 +28,7 @@ public class Redirection {
 		{
 			System.out.println("BeforeSuite Set Browser window to Full Size");
 			// Set Browser window to full screen 
-			driver.manage().window().maximize(); 
+			driver.manage().window().maximize(); //comment
 			System.out.println("BeforeTest System will wait to load the resourses");	
 		}
 	
