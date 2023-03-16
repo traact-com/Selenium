@@ -1,6 +1,8 @@
 package demo;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,7 +35,7 @@ public class EntitySelection {
        usernametxt.sendKeys("priyanka@traact.com");
        
        Assert.assertTrue(passwordtxt.isDisplayed());
-       passwordtxt.sendKeys("Priyayoki02&");
+       passwordtxt.sendKeys("Priyayoki02*");
        
        driver.findElement(By.cssSelector("#sign-in-button")).click();
 	   
@@ -41,14 +43,34 @@ public class EntitySelection {
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
        
        driver.findElement(By.cssSelector("#__next > div > main > div.MuiBox-root.css-vwfq95 > div.MuiBox-root.css-14oqdsi > div > div.MuiBox-root.css-12vmat7")).click();
+       //driver.findElement(By.cssSelector("#entity-select-search")).click();
+		WebElement dropdown = driver.findElement(By.cssSelector("#entity-select-search"));
+
+       for (int i = 0; i < 3; i++) {
+    	   dropdown.click();
+    	   
+    	   List<WebElement> itemsInDropdown = driver
+					.findElements(By.cssSelector("body > div.MuiModal-root.MuiDialog-root.css-1mipqhv > div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > div.MuiDialogContent-root.css-1gxl0ec > nav"));
+    	   int size = itemsInDropdown.size();
+    	   
+    	   int randomNumber = ThreadLocalRandom.current().nextInt(0, size);
+    	   itemsInDropdown.get(randomNumber).click();
+
+
+    	   
+       }
        
+       /*
      //*[@id=":r32:"]
        WebElement searchbar = driver.findElement(By.id(":r39:"));
        Assert.assertTrue(searchbar.isDisplayed());
        searchbar.sendKeys("century labs ui");
        driver.findElement(By.cssSelector("body > div.MuiModal-root.MuiDialog-root.css-1mipqhv > div.MuiDialog-container.MuiDialog-scrollPaper.css-ekeie0 > div > div.MuiDialogContent-root.css-1gxl0ec > nav > div:nth-child(2) > p")).click();
        driver.findElement(By.cssSelector("#\\:r31\\:")).click();
+       */
        }
+       
+       
 	}
 
   
