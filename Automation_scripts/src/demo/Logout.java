@@ -46,7 +46,7 @@ public class Logout {
         driver.findElement(By.cssSelector("#sign-in-button")).click();
    
         //wait-time 
-        //comment addee
+        //comment ad
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.findElement(By.cssSelector("#__next > div > div > div > div.MuiBox-root.css-0 > div > div.MuiBox-root.css-4g6ai3 > div > img")).click();
         driver.findElement(By.cssSelector("body > div.MuiModal-root.MuiPopover-root.css-jp7szo > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation2.MuiPopover-paper.css-1yno45j > div > p:nth-child(2)")).click();
