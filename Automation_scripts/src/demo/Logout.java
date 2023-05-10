@@ -34,7 +34,7 @@ public class Logout {
        usernametxt.sendKeys("priyanka@traact.com");
        
        Assert.assertTrue(passwordtxt.isDisplayed());
-       passwordtxt.sendKeys("Priyayoki02*");
+       passwordtxt.sendKeys("Priyayoki02&");
       
         
        
